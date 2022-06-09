@@ -1,7 +1,13 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
-import Button from './components/Button';
+import Familia from './components/relacao/Familia';
+// import ParImpar from './components/ParImpar';
+// import ContadorV2 from './components/Contador/ContadorV2';
+// import Pai from './components/indirect/Pai';
+// import Pai from './components/direct/Pai';
+// import Contador from './components/Contador';
+// import Button from './components/Button';
 // import Title from './components/Title';
 //import Random from './components/Random';
 // import MinMax from './components/MinMax';
@@ -9,18 +15,27 @@ import Button from './components/Button';
 // import Primeiro from './components/Primeiro';
 
 export default () => (
-    <View style={style.App}>
-        <Button />
+    <SafeAreaView style={style.App}>
+        <Familia />
         {
-        /*<Random  min={1} max={60}/>
+            /*
+            <ParImpar num={3}/>
+            <ContadorV2 />
+        <Pai />
+        <Contador inicial={100} passo={13} />
+        <Contador />
+        <Random  min={1} max={60}/>
+        <Button />
         <Title principal="Cadastro"
         secundario="Tela de Cadastro" />
         <MinMax min="3" max="20" />
          <CompPadrao />
         <Comp1 />
         <Comp2 />
-        <Primeiro /> */}
-    </View>
+        <Primeiro /> 
+        */
+        }
+    </SafeAreaView>
 )
 
 const style = StyleSheet.create({
