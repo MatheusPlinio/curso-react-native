@@ -1,12 +1,14 @@
 import React from 'react'
-import Membro from './Membro'
+import {Text} from 'react-native'
+import style from '../style'
+
 
 
 export default props => {
     return (
         <>
-            <Membro nome="Ana" sobrenome="Silva" />
-            <Membro nome="Julia" sobrenome="Silva" />
+            <Text style={style.txtG}>Membros da Familia:</Text>
+            {props.children}
         </>
     )
 }
